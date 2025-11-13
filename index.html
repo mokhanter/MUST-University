@@ -1,1 +1,35 @@
-<h1>hello</h1>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة تعليمية</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>منصة الكورسات التعليمية</h1>
+    </header>
+
+    <main>
+        <section id="lessons">
+            <h2>الدروس</h2>
+            <div id="lesson-list">
+                <!-- الدروس ستظهر هنا تلقائياً -->
+            </div>
+        </section>
+
+        <section id="control-panel">
+            <h2>لوحة التحكم</h2>
+            <form id="lesson-form">
+                <input type="text" id="lesson-title" placeholder="عنوان الدرس" required>
+                <input type="url" id="video-link" placeholder="رابط الفيديو (YouTube أو Google Drive)" required>
+                <input type="url" id="exam-link" placeholder="رابط الامتحان (Google Form أو PDF)" required>
+                <button type="submit">إضافة درس</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
